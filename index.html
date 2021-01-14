@@ -64,7 +64,7 @@
             <figure>
                 <figcaption>my hobbies</figcaption>
                 <picture>
-                    <img src='hobbies-after.JPG'>
+                    <img src='hobbies-after.JPG' alt="hobbies">
                 </picture>
                 <section>
                     <details>
@@ -99,13 +99,14 @@
                 <legend>Choose a service:</legend>
                 Service 1<input type="checkbox"> Service 2<input type="checkbox"> Service 3 <input type="checkbox">
                 <br>
-                <select>
-                    <optgroup>
+                <label for="item-select">Choose an item you want:</label>
+                <select id="item-select">
+                    <optgroup label="chairs"> 
                         <option>Black chairs</option>
                         <option>White chairs</option>
                         <option>Red chairs</option>
                     </optgroup>
-                    <optgroup>
+                    <optgroup label="food">
                         <option>Green eggs and toast</option>
                         <option>Pink eggs and ham</option>
                         <option>Silver eggs and salad</option>
@@ -118,14 +119,14 @@
                 <br>
                 Phone number: <input type="tel">
                 <br>
-                Location:
-                <select>
-                    <datalist>
-                        <option>Pacific Ocean</option>
-                        <option>Atlantic Ocean</option>
-                        <option>The pond</option>
-                    </datalist>
-                </select>
+                <label for="location-choice">Choose your location:</label>
+                <input list="locations" id="location-choice" name="location-choice" />
+
+                <datalist id="locations">
+                    <option value="Asia">
+                    <option value="North America">
+                    <option value="Europe">
+                </datalist>
             </fieldset>
             
             Message/comments:
@@ -138,7 +139,7 @@
 
     </div>
     <span>
-        <h3><pre>let me get to know you!</pre></h3>
+        <pre>let me get to know you!</pre>
         What's your fav color:<input type="color">
         <br>
         Tell me your credit card passwords!<input type="password">
