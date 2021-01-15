@@ -3,29 +3,54 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ellie's Page</title>
     <!-- this is linked to an empty stylesheet since we are not allowed to use css -->
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="empty.css">
 </head>
 
 <body>
-    <header>author: ellie huo</header>
+    <header><em>author: ellie huo</em>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="">Last Blog</a></li>
+                    <li><a href="another.html">Next Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <main>
         <section>
             <h1>Ellie's Page</h1>
             <h2>1/12/2021</h2>
             <h3>some things about me</h3>
-            <aside>i suck at writing but here we go</aside>
-            <div>
-                <nav>
-                    <ul>
-                        <li><a href="">Last Blog</a></li>
-                        <li><a href="">Next Blog</a></li>
-                    </ul>
-                </nav>
-            </div>
         </section>
+
+        <div>
+            <p>
+                Hiii! My name is <strong>Ellie Huo</strong> and welcome to this repo!
+                <hr>
+            <aside>i suck at writing but here we go</aside>
+            I am a sophomore at the <i>University of California San Diego</i> studying computer science
+            <br>
+            <code>Hello, world.</code>
+            <details>
+                <summary>My fav languages</summary>
+                Java, Python, C++
+            </details>
+            <br>
+            I'm really loud, love food and kdramas and I'm very curious. As a kid, I've
+            always been curious about everything and especially tech. How does wifi work? Why is it when I click a
+            button it redirects me to another site? And also questions like the purpose of life (but thankfully God
+            met me). Now, my questions are not all answered just because of one class but it started turning some
+            gears in my head. The fact that everything is related to technology somehow makes my brain factory start
+            producing a lot more questions and also many more perspectives. When the street lights outside my window
+            turn on at night, I wonder how it was programmed to turn on at a certain time before dark and then turn
+            off. When I play video games and I kill an enemy, I wonder behind my screen, all the calculations of
+            damage that are being made. So I chose CS as my college major and I definitely struggle A LOT. But as it
+            brings me new challenges, I can seek for new answers.
+            </p>
+        </div>
         <div>
             <h2>Fav Foods</h2>
             <ol>
@@ -36,24 +61,13 @@
                 <li>Ramen</li>
             </ol>
         </div>
-        <div>
-            <p>
-                Hiii! My name is <strong>Ellie Huo</strong> and welcome to this repo!
-                <br>
-                I am a sophomore at the <i>University of California San Diego</i> studying computer science
-                <code>Hello, world.</code> I'm really loud, love food and kdramas and I'm very curious. As a kid, I've
-                always been curious about everything and especially tech. How does wifi work? Why is it when I click a
-                button it redirects me to another site? And also questions like the purpose of life (but thankfully God
-                met me). Now, my questions are not all answered just because of one class but it started turning some
-                gears in my head. The fact that everything is related to technology somehow makes my brain factory start
-                producing a lot more questions and also many more perspectives. When the street lights outside my window
-                turn on at night, I wonder how it was programmed to turn on at a certain time before dark and then turn
-                off. When I play video games and I kill an enemy, I wonder behind my screen, all the calculations of
-                damage that are being made. So I chose CS as my college major and I definitely struggle A LOT. But as it
-                brings me new challenges, I can seek for new answers.
-            </p>
-        </div>
         <table>
+            <template>
+                <tr>
+                    <td>Kdrama#1: Itaewon Class</td>
+                    <td>Kdrama#2: The Flower of Evil</td>
+                  </tr>
+            </template>
             <caption>Table of Bucket List Post Covid</caption>
             <colgroup>
                 <col span="3">
@@ -82,76 +96,88 @@
                 <picture>
                     <img src='hobbies-after.JPG' alt="hobbies">
                 </picture>
-                <section>
-                    <details>
-                        <summary>My fav languages</summary>
-                        Java, Python, C++
-                    </details>
-                </section>
+
+                
             </figure>
-            <h3>my fav vid:</h3>
-            <iframe src="https://www.youtube.com/embed/iUXAHc-ABoY"></iframe>
+            <h3>me waking up:</h3>
+            <video controls width="300">
+                <source src="SampleVideo_1280x720_1mb.mp4"  type="video/mp4">
+            </video>
+            
             <br>
             <h3>cool audio:</h3>
             <audio controls>
                 <source src="https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_700KB.mp3">
             </audio>
+            <h3>
+                UCSD website:
+            </h3>
+            <iframe src="https://ucsd.edu/"></iframe>
         </section>
 
         <section>
-            <h3>here is my experimentation:</h3>
-            <svg viewBox="0 0 100 100" stroke="black">
-                <polygon points="100,50, 53, 10, 32, 54" />
-            </svg>
-            <canvas>
-                <!-- without JS, not sure how to add anything to it -->
+            <h3>here is a dot:</h3>
+            <svg viewBox="0 0 10 10" x="210" width="200">
+                <circle cx="5" cy="4" r="3" />
+              </svg>
+            <canvas width="300" height="30">
+                An alternative text describing what your canvas displays.
             </canvas>
+
         </section>
         <div>
             <h3>Contact me for the prices of services i don't offer</h3>
             <label>Fill out the form below:</label>
-            <form>
-                <fieldset>
-                    <legend>Choose a service:</legend>
-                    Service 1<input type="checkbox"> Service 2<input type="checkbox"> Service 3 <input type="checkbox">
-                    <br>
-                    <label for="item-select">Choose an item you want:</label>
-                    <select id="item-select">
-                        <optgroup label="chairs">
-                            <option>Black chairs</option>
-                            <option>White chairs</option>
-                            <option>Red chairs</option>
-                        </optgroup>
-                        <optgroup label="food">
-                            <option>Green eggs and toast</option>
-                            <option>Pink eggs and ham</option>
-                            <option>Silver eggs and salad</option>
-                        </optgroup>
-                    </select>
-                    <br>
-                    Date: <input type="datetime-local">
-                    <br>
-                    Email: <input type="email">
-                    <br>
-                    Phone number: <input type="tel">
-                    <br>
-                    <label for="location-choice">Choose your location:</label>
-                    <input list="locations" id="location-choice" name="location-choice" />
+            <div>
+                <form action="" method="get">
+                    <legend>Services Form</legend>
+                    <fieldset>
+                      <label for="name">Enter your name: </label>
+                      <input type="text" name="name" id="name" required>
+                      <br>  
+                      <label for="question">Do you consent to giving me info:</label>
+                        Yes<input type="checkbox" name="question id="question"> 
+                        <br>
+                        <label for="item-select" required>Choose an item you want:</label>
+                        <select id="item-select">
+                            <optgroup label="chairs">
+                                <option>Black chairs</option>
+                                <option>White chairs</option>
+                                <option>Red chairs</option>
+                            </optgroup>
+                            <optgroup label="food">
+                                <option>Green eggs and toast</option>
+                                <option>Pink eggs and ham</option>
+                                <option>Silver eggs and salad</option>
+                            </optgroup>
+                        </select>
+                        <br>
+                        <label for="date">Date: </label> <input type="datetime-local" id="date">
+                        <br>
+                        Email: <input type="email">
+                        <br>
+                        Phone number: <input type="tel">
+                        <br>
+                        <label for="location-choice">Choose your location:</label>
+                        <input list="locations" id="location-choice" name="location-choice" />
 
-                    <datalist id="locations">
-                        <option value="Asia">
-                        <option value="North America">
-                        <option value="Europe">
-                    </datalist>
-                </fieldset>
+                        <datalist id="locations">
+                            <option value="Asia">
+                            <option value="North America">
+                            <option value="Europe">
+                        </datalist>
+                        <input type="submit">
+                    </fieldset>
 
-                Message/comments:
-                <textarea>Type here
-            </textarea>
-                <button>Press me to refresh the page</button>
-                <input type="submit">
-                <input type="reset">
-            </form>
+                   <label for="comments"> Message/comments:</label>
+                    <textarea id="comments" name="comments">Type here
+                </textarea>
+                    <button>Press me to do nothing</button>
+                    <input type="submit">
+                    <input type="reset">
+                </form>
+            </div>
+
 
         </div>
         <pre>let me get to know you!</pre>
@@ -166,9 +192,6 @@
             <br>
             Your fav meme: <input type="file">
         </span>
-        <template>
-            <!-- once again not rendered until JS -->
-        </template>
     </main>
     <footer>contact me at 123 456 7890</footer>
 </body>
