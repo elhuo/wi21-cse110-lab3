@@ -61,7 +61,9 @@ a:hover {
     display: block;
     color: #FF00FF;
 }
-
+a, h1{
+    background-color: #b180b1;
+}
 a:active {
     color: #0000FF;
 }
