@@ -1,27 +1,36 @@
-#title{
-    position:relative;
+#title {
+    position: relative;
     border-style: dashed;
     border-color: black;
     border-width: 5px;
     border-radius: 10px;
     font-size: 18px;
 }
-[attribute = para]{
-    position:absolute;
+
+@media only screen and (max-width: 800px) {
+    body {
+        text-align: center;
+    }
+}
+
+[attribute=para] {
+    position: absolute;
     border-style: solid;
-    border-color:rgb(110, 147, 202);
+    border-color: rgb(110, 147, 202);
     text-align: center;
     border-width: 1em;
     border-radius: 2em;
     font-size: 90%;
 }
-.foods{
+
+.foods {
     width: 290px;
     border: 10px solid rgb(204, 185, 99);
     padding: 20px 10px 15px 12px;
     margin: 20px 10px 15px 12px;
 }
-.tab{
+
+.tab {
     width: 280px;
     height: 250px;
     border: 8px solid rgb(204, 137, 99);
@@ -31,25 +40,55 @@
     padding-right: 12px;
     margin: auto;
 }
-.service-form{
+
+.service-form {
     margin-top: 20px;
     margin-bottom: 10px;
     margin-left: 15px;
     margin-right: 12px;
+    display: grid;
+    grid-template-columns: 480px 50px 100px 400px 200px;
+    column-gap: 50px;
+    grid-template-rows: 250px 50px;
+    align-items: end;
 }
 
-h3{
-    display:inline-block;
-
+h3 {
+    display: inline-block;
 }
-a:hover{
-    display:block;
+
+a:hover {
+    display: block;
     color: #FF00FF;
 }
-a:active{
+
+a:active {
     color: #0000FF;
 }
-section video{
+
+section video {
     max-width: 90%;
     min-width: 30%;
+}
+
+figure>figcaption {
+    font-size: 30px;
+}
+
+pre~span {
+    background-color: antiquewhite;
+}
+
+h3+svg {
+    background-color: blue;
+}
+
+audio.aud {
+    width: 1400px;
+}
+.know{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
 }
